@@ -1036,7 +1036,6 @@ class Automator(object):
                     )
                 except BootstrapError:
                     pass
-                return
             elif len(args.host) == 0 and args.update_remote:
                 self.cluster_manager.update(not args.no_rebuild)
             elif len(args.rm_remote_output) > 0:
