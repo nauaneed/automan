@@ -179,6 +179,8 @@ def opts2path(opts, keys=None, ignore=None, kmap=None):
             return f'{r}_{v}'
         elif isinstance(v, str):
             return v
+        elif v is None:
+            return k
         else:
             return f'{k}_{v}'
 
